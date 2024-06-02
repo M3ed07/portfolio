@@ -11,6 +11,9 @@ body {
         @apply hover:text-Secondary-fc relative pb-2;
     }
 }
+.homeType{
+    @apply rounded-full bg-bg-color text-Secondary-fc border border-Secondary-fc text-center justify-center p-2 items-center mt-9
+}
 
 .list-item a::after {
     content: '';

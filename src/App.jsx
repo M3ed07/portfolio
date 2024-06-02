@@ -7,7 +7,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 function App() {
   return (
-    <div className="text-main-fc bg-bg-color w-full h-screen flex justify-center">
+    <div className="text-main-fc bg-bg-color w-full min-h-screen h-full flex justify-center">
       <Routes>
         <Route path='/' element={<Navbar/>}>
           <Route path="home" element={<Home/>}></Route>

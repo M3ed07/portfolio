@@ -1,13 +1,12 @@
 import React from 'react';
 import { NavbarData } from './NavbarData';
-import { NavLink } from 'react-router-dom';
-import { Outlet } from 'react-router-dom';
+import { NavLink ,Outlet } from 'react-router-dom';
 
 function Navbar({ children }) {
   return (
     <div className='container'>
       <nav className='w-full h-28 flex items-center justify-between'>
-        <h1 className="font-semibold text-3xl">
+        <h1 className="font-semibold text-3xl opacity-95">
           Melad<span className="text-Secondary-fc">.</span>
         </h1>
         <ul className="w-1/2 flex justify-around items-center">
@@ -21,7 +20,7 @@ function Navbar({ children }) {
           </button>
         </ul>
       </nav>
-      <main>{children}<Outlet /></main>
+      <main className=' lg:mt-24'>{children}<Outlet /></main>
     </div>
   );
 }
