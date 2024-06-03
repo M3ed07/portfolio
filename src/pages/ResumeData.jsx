@@ -34,3 +34,20 @@ export const ExperienceData = [
         place:'social media and web',
     },
 ]
+export const EducationData = [
+    {
+        title:"Bachelor's degree in computer science",
+        date:'2020 - 2024',
+        place:'In person',
+    },
+    {
+        title:'Digitalize web development',
+        date:'2022',
+        place:'In person',
+    },
+    {
+        title:'Masarat front-end web developent',
+        date:'2023',
+        place:'In person',
+    }
+]
