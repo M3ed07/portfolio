@@ -59,7 +59,6 @@ export const EducationData = [
         place:'In person',
     }
 ]
-
 export const SkillsData = [
     {
         logo : <img src={html} alt="" />
