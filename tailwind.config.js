@@ -7,10 +7,10 @@ module.exports = {
         center: true,
         padding: '2rem',
         screens: {
-          sm: '100%',
-          md: '100%',
-          lg: '1024px',
-          xl: '1280px',
+          sm: '640px',
+          md: '768px',
+          lg: '960px',
+          xl: '1200px',
         },
       },
       fontFamily: {
@@ -27,11 +27,15 @@ module.exports = {
         '800': 800,
         '900': 900,
       },
-    },
-    colors: {
-      "bg-color": "rgb(28, 28, 36)",
-      "main-fc": "#fdfdfd",
-      "Secondary-fc": "#09fdae",
+      colors: {
+        "gray-color": "#2b2a33",
+        "bg-color": "rgb(28, 28, 36)",
+        "main-fc": "#fdfdfd",
+        "Secondary-fc": "#09fdae",
+      },
+      width: {
+        "47": '47%',
+      },
     },
   },
   plugins: [
