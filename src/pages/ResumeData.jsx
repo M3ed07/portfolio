@@ -1,3 +1,12 @@
+import html from '../images/icons/icons8-html.svg'
+import css from '../images/icons/icons8-css.svg'
+import js from '../images/icons/icons8-js.svg'
+import react from '../images/icons/icons8-react-native.svg'
+import fire from '../images/icons/icons8-firebase.svg'
+import node from '../images/icons/icons8-node-js.svg'
+import tailw from '../images/icons/icons8-tailwind-css.svg'
+import figma from '../images/icons/icons8-figma.svg'
+
 export const ResumeData = [
     {
         title:"Experience",
@@ -16,7 +25,6 @@ export const ResumeData = [
         path:"about"
     }
 ]
-
 export const ExperienceData = [
     {
         title:'Front-end Web app Developer',
@@ -50,4 +58,31 @@ export const EducationData = [
         date:'2023',
         place:'In person',
     }
+]
+
+export const SkillsData = [
+    {
+        logo : <img src={html} alt="" />
+    },
+    {
+        logo : <img src={css} alt="" />
+    },
+    {
+        logo : <img src={js} alt="" />
+    },
+    {
+        logo : <img src={tailw} alt="" />
+    },
+    {
+        logo : <img src={node} alt="" />
+    },
+    {
+        logo : <img src={fire} alt="" />
+    },
+    {
+        logo : <img src={react} alt="" />
+    },
+    {
+        logo : <img src={figma} alt="" />
+    },
 ]
