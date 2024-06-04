@@ -13,6 +13,10 @@ export const NavbarData = [
         path: "resume",
     },
     {
+        title : "Work",
+        path: "work",
+    },
+    {
         title : "Contact",
         path: "contact",
     },
