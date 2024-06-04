@@ -51,3 +51,9 @@ body {
     background-color: #09fdae;
     color: rgb(28, 28, 36);
 }
+
+@layer components{
+    .inputTag{
+        @apply rounded-md focus:ring-1 shadow-lg border-neutral-700 focus:border-none focus:ring-Secondary-fc bg-bg-color lg:w-47 w-full
+    }
+}

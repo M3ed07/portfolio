@@ -14,15 +14,15 @@ function App() {
     <div className="text-main-fc bg-bg-color w-full min-h-screen h-full flex justify-center">
       <Routes>
         <Route path='/' element={<Navbar/>}>
-          <Route path="home" element={<Home/>}></Route>
-          <Route path="services" element={<Services/>}></Route>
+          <Route path="home" element={<Home/>}/>
+          <Route path="services" element={<Services/>}/>
           <Route path="resume" element={<Resume/>}>
             <Route path="experience" element={<Experience/>}/>
             <Route path="educations" element={<Education/>}/>
             <Route path="skills" element={<Skills/>}/>
             <Route path="about" element={<About/>}/>
           </Route>
-          <Route path="contact" element={<Contact/>}></Route>
+          <Route path="contact" element={<Contact/>}/>
         </Route>
       </Routes>
     </div>
