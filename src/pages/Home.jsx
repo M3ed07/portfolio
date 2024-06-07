@@ -44,11 +44,16 @@ function Home() {
             
 
             <div className="flex flex-col place-items-center gap-y-6 lg:flex-row gap-x-4 lg:justify-between">
-              <button className="flex py-3 w-8/12 gap-3 rounded-full bg-bg-color text-Secondary-fc border border-Secondary-fc text-center justify-center items-center duration-200 hover:bg-Secondary-fc hover:text-main-fc ease-in-out">
-                DOWNLOAD CV
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-                </svg>
+            <button
+                name='download cv'
+                className="flex py-3 w-8/12 gap-3 rounded-full bg-bg-color text-Secondary-fc border border-Secondary-fc text-center justify-center items-center duration-200 hover:bg-Secondary-fc hover:text-main-fc ease-in-out"
+              >
+                <a href="meladCv.pdf" download="meladCv.pdf" className="flex items-center gap-3 w-full h-full justify-center">
+                  DOWNLOAD CV 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg>
+                </a>
               </button>
               <div className='flex justify-around w-8/12 '>
                 <button className="homeType"><a href="https://github.com/M3ed07"><Github /></a></button>
