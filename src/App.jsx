@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './nav/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Services from './pages/Services';
 import Resume from './pages/Resume';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
@@ -14,11 +13,10 @@ function App() {
   return (
     <div className="text-main-fc bg-bg-color w-full min-h-screen h-full flex justify-center">
       <Routes>
-        <Route path='/' element={<Navbar/>}>
-          <Route path="home" element={<Home/>}/>
-          <Route path="services" element={<Services/>}/>
-          <Route path="resume" element={<Resume/>}>
-            <Route path="experience" element={<Experience/>}/>
+        <Route element={<Navbar/>}>
+          <Route path="/" element={<Home/>}/>
+          <Route path='resume' element={<Resume/>}>
+            <Route path='experience' element={<Experience/>}/>
             <Route path="educations" element={<Education/>}/>
             <Route path="skills" element={<Skills/>}/>
             <Route path="about" element={<About/>}/>

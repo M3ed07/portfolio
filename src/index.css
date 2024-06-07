@@ -8,11 +8,15 @@ body {
 
 @layer {
     .list-item {
-        @apply hover:text-Secondary-fc relative pb-2;
+        @apply hover:text-Secondary-fc relative lg:pb-2 pb-1;
     }
 }
 .homeType{
-    @apply rounded-full bg-bg-color text-Secondary-fc border border-Secondary-fc text-center justify-center p-2 items-center mt-9
+    @apply rounded-full bg-bg-color text-Secondary-fc border border-Secondary-fc text-center justify-center p-1 items-center duration-200
+}
+.homeType:hover{
+    scale: 1.5;
+    border: none;
 }
 
 .list-item a::after {
@@ -34,21 +38,21 @@ body {
 .list-item a.active {
     transform: scaleX(1);
     transform-origin: bottom left;
-    color: #09fdae;
+    color: #41C9E2;
 }
 .ResumeBtn{
     @apply duration-300 ease-in-out bg-main-fc text-center bg-opacity-5 rounded-lg py-3 text-main-fc text-sm md:text-base lg:text-lg
 }
     
 .ResumeBtn:hover{
-    background-color: #09fdae;
+    background-color: #41C9E2;
     color: rgb(28, 28, 36);
 }
 .ResumeBtn:hover::after,
 .ResumeBtn:focus::after,
 .ResumeBtn.active::after,
 .ResumeBtn.active {
-    background-color: #09fdae;
+    background-color: #41C9E2;
     color: rgb(28, 28, 36);
 }
 

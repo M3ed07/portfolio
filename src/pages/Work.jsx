@@ -1,5 +1,6 @@
-import { ReactComponent as Github } from '../images/icons/icons8-github.svg';
+import { ReactComponent as Github } from '../images/icons/icons8-github-2.svg';
 import { WorkData } from './WorkData';
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
 function Work() {
@@ -18,10 +19,10 @@ function Work() {
     };
 
     return (
-        <div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{delay:0.5,duration:1.4,ease:"easeInOut"}}}>
             {WorkData.map((item, index) => (
                 status === item.id && (
-                    <div key={index} className="flex flex-col-reverse lg:flex-row lg:justify-between gap-10 lg:gap-0">
+                    <motion.div key={index} className="flex flex-col-reverse lg:flex-row lg:justify-between gap-10 lg:gap-0" initial={{opacity:0}} animate={{opacity:1,transition:{delay:0.1,duration:1.4,ease:"easeInOut"}}}>
                         <section className="flex flex-col text-center lg:text-start lg:w-47 gap-6 lg:gap-7">
                             <h1 className="text-7xl font-bold leading-tight">{item.id}</h1>
                             <h2 className="font-semibold text-2xl lg:text-3xl xl:text-4xl opacity-95">{item.title}</h2>
@@ -51,10 +52,10 @@ function Work() {
                                 </div>
                             </div>
                         </section>
-                    </div>
+                    </motion.div>
                 )
             ))}
-        </div>
+        </motion.div>
     );
 }
 

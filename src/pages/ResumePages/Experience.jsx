@@ -1,7 +1,8 @@
 import { ExperienceData } from "../ResumeData";
+import { motion } from 'framer-motion';
 function Experience() {
     return (
-      <div className="flex flex-col gap-y-6 my-12 lg:my-0">
+      <motion.div className="flex flex-col gap-y-6 my-12 lg:my-0" initial={{opacity:0}} animate={{opacity:1,transition:{duration:1,ease:"easeInOut"}}}>
         <section className="flex flex-col gap-y-6">
         <h2 className="font-semibold text-2xl lg:text-3xl xl:text-4xl opacity-95">My experience</h2>
         <p className="text-sm md:text-base leading-relaxed lg:leading-loose tracking-normal opacity-80">
@@ -20,7 +21,7 @@ function Experience() {
                 </div>
             })}
         </section>
-      </div>
+      </motion.div>
     );
   }
   

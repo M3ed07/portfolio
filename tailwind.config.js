@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      animation: {
+        'border-spin': 'spin 3s linear infinite',
+      },
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
       container: {
         center: true,
         padding: '2rem',
@@ -31,7 +40,7 @@ module.exports = {
         "gray-color": "#2b2a33",
         "bg-color": "rgb(28, 28, 36)",
         "main-fc": "#fdfdfd",
-        "Secondary-fc": "#09fdae",
+        "Secondary-fc": "#41C9E2",
       },
       width: {
         "47": '47%',

@@ -13,6 +13,6 @@ export const HomeData = [
     },
     {
         title:"Code commits",
-        Num:"120"
+        Num:"96"
     },
 ]

@@ -1,5 +1,6 @@
 import { ContactData } from "./ResumeData";
 import React,{useState} from 'react';
+import { motion } from 'framer-motion';
 function Contact() {
 
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ function Contact() {
   };
 
     return (
-      <div className="flex flex-col-reverse gap-16 mb-8 lg:flex-row lg:items-center justify-between">
+      <motion.div className="flex flex-col-reverse gap-16 mb-8 lg:flex-row lg:items-center justify-between" initial={{opacity:0}} animate={{opacity:1,transition:{delay:0.5,duration:1.4,ease:"easeInOut"}}}>
         <section className="lg:w-w60 h-3/4 p-10 flex flex-col gap-8 shadow-inner rounded-lg bg-main-fc bg-opacity-5">
           <div className="flex flex-col gap-y-6 text-center lg:text-start">
             <h2 className=" text-Secondary-fc text-2xl lg:text-3xl xl:text-4xl opacity-95">Let's work together</h2>
@@ -73,7 +74,7 @@ function Contact() {
           </div>
         })}
         </section>
-      </div>
+      </motion.div>
     );
   }
   
